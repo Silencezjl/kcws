@@ -94,7 +94,7 @@ def main(argc, argv):
     curDir = os.path.join(rootDir, dirName)
     for file in fileList:
       if file.endswith(".txt"):
-        curFile = os.path.join(curDir, file)
+        curFile = os.path.join(dirName, file)
         # print("processing:%s" % (curFile))
         fp = open(curFile, "r")
         for line in fp.readlines():
